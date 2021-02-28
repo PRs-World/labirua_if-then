@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PR's Tough Decision"
+        app:layout_constraintBottom_toTopOf="@+id/txtStoryOutcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStoryBackground"
+        android:layout_width="125dp"
+        android:layout_height="93dp"
+        android:text="Background"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDecision1"
+        app:layout_constraintEnd_toEndOf="@+id/txtStoryOutcome"
+        app:layout_constraintStart_toStartOf="@+id/txtStoryOutcome"
+        app:layout_constraintTop_toBottomOf="@+id/txtStoryOutcome" />
+
+    <TextView
+        android:id="@+id/txtStoryOutcome"
+        android:layout_width="178dp"
+        android:layout_height="149dp"
+        android:text="If PR chooses siomai for dinner, he will be full, if he chooses crab balls, he will still have room for dinner."
+        app:layout_constraintBottom_toTopOf="@+id/txtStoryBackground"
+        app:layout_constraintEnd_toEndOf="@+id/textTitle"
+        app:layout_constraintStart_toStartOf="@+id/textTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <Button
+        android:id="@+id/buttonDecision1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eat siomai."
+        app:layout_constraintBottom_toTopOf="@+id/buttonDecision2"
+        app:layout_constraintEnd_toEndOf="@+id/txtStoryBackground"
+        app:layout_constraintStart_toStartOf="@+id/txtStoryBackground"
+        app:layout_constraintTop_toBottomOf="@+id/txtStoryBackground" />
+
+    <Button
+        android:id="@+id/buttonDecision2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eat crab balls."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDecision1"
+        app:layout_constraintStart_toStartOf="@+id/buttonDecision1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDecision1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
